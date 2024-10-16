@@ -1,8 +1,7 @@
 public class Savings extends Account {
     //list props specific to savings account
-    private String depositBoxNum;
-    private String depositBoxCode;
-    private int safetyDepositBox;
+    private int depositBoxID;
+    private int depositBoxCode;
 
     //constructor to init setting for savings props
     public Savings(String name){

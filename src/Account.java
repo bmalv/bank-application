@@ -1,9 +1,11 @@
 //abstract because we don't want to create classes from Account
 public abstract class Account implements IBaseRate {
     //list common props for savings and checking account
+    private String name;
     private String accountNumber;
-    private String ssn;
-    private static int uniqueNum = 1000;
+    private String sSN;
+    private double balance;
+    double rate;
 
     //constructor to set base properties and init the account
     public Account(String name) {
