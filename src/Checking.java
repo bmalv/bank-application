@@ -4,8 +4,8 @@ public class Checking extends Account {
     private int pinNumber;
 
     //constructor to init checking account props
-    public Checking(String name){
-        super(name);
+    public Checking(String name, String sSN, double initDeposit){
+        super(name, sSN, initDeposit);
         System.out.println("New Checking Account!");
     }
 
