@@ -5,7 +5,7 @@ public abstract class Account implements IBaseRate {
     String accountNumber;
     private String sSN;
     private double balance;
-    private double rate;
+    double rate;
     private static int index = 10000;
 
     //constructor to set base properties and init the account
@@ -17,7 +17,10 @@ public abstract class Account implements IBaseRate {
         //set account number
         index++;
         this.accountNumber = setAccountNumber();
+        setRate();
     }
+
+    public abstract void setRate();
 
     private String setAccountNumber(){
         String lastTwoOfSSN = sSN.substring(sSN.length() - 2);
@@ -43,7 +46,8 @@ public abstract class Account implements IBaseRate {
         System.out.println(
                 "NAME: " + name +
                         "\nACCOUNT NUMBER: " + accountNumber +
-                        "\nBALANCE: $" + balance
+                        "\nBALANCE: $" + balance +
+                        "\nRATE: " + rate + "%"
         );
     }
 }

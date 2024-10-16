@@ -16,6 +16,11 @@ public class Checking extends Account {
         pinNumber = (int) (Math.random() * Math.pow(10, 4));
     }
 
+    @Override
+    public void setRate() {
+        rate = getBaseRate() * .15;
+    }
+
     public void showInfo() {
         super.showInfo();
         System.out.println("Your Checking Account features" +
