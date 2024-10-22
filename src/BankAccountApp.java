@@ -4,7 +4,6 @@ public class BankAccountApp {
 
         Savings savacc1 = new Savings("Rich Lowe", "123456789", 2500);
 
-        savacc1.compound();
 
         savacc1.showInfo();
         System.out.println("*****************");

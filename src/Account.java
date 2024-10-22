@@ -2,10 +2,10 @@
 public abstract class Account implements IBaseRate {
     //list common props for savings and checking account
     private String name;
-    String accountNumber;
+    protected String accountNumber;
     private String sSN;
     private double balance;
-    double rate;
+    protected double rate;
     private static int index = 10000;
 
     //constructor to set base properties and init the account
